@@ -64,7 +64,7 @@ exports.likeSauce = (req, res, next) => {
     Sauce.findOne({_id: req.params.id})
     .then((sauce) =>{
         if (!sauce.usersLiked.includes(req.body.userId) && req.body.like == 1){
-            Sauce.updateOne({$push: {usersLiked: req.body.userId}, $inc: {likes: 1}})            
+            Sauce.updateOne({$push: {usersLiked: req.body.userId}, $inc: {likes: 1}})
             .then(() => {res.status(201).json({message : "Sauce liked !"})})
             .catch((error) => {res.status(400).json({error})});
         }

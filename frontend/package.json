@@ -11,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.2.0",
-    "http-server": "^0.11.1",
-    "live-server": "^1.2.1",
-    "run-script-os": "^1.0.7"
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
   }
 }
